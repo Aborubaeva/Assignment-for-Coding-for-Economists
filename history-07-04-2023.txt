@@ -1,0 +1,12 @@
+    1  ls
+    2  ls -l
+    3  ls -hl
+    4  mkdir data
+    5  mkdir data/raw
+    6  mkdir data/raw/life-expectancy
+   7  ls data/raw/life-expectancy/
+   8  cd data/raw/life-expectancy
+   9  cd Assignment/data/raw/life-expectancy/
+   10  curl -Lo life-expectancy.csv https://osf.io/pguwf//download/v1.0/worldbank-lifeexpectancy-raw.csv
+   11  history
+   12  history >history-07-04-2023.txt

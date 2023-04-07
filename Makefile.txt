@@ -1,0 +1,50 @@
+# Assignment for " Coding for Economists"
+  #Part 1.Folder Structure. I used the data "World Bank Life Expectancy" from "Gabor's Data Analytics" page (https://osf.io/pguwf/) for this part of the project. I downloaded it using curl, addittionally I demonstrated other commands with folders:
+#to see files in the current forder
+     ls
+     ls -l
+     ls -hl
+# to create new directories
+     mkdir data
+     mkdir data/raw
+     mkdir data/raw/life-expectancy
+# see the files in the folder
+     ls data/raw/life-expectancy/
+# change directory
+     cd data/raw/life-expectancy
+     cd Assignment/data/raw/life-expectancy/
+# to download the data
+     curl -Lo life-expectancy.csv https://osf.io/pguwf//download/v1.0/worldbank-lifeexpectancy-raw.csv
+#to save the history
+     history
+     history >history-07-04-2023.txt
+     
+  # Part 2. Python
+		#Automating repeating tasks using Python “for” loops.
+      import pandas as pd
+      import requests
+      from csv import DictReader
+      text = 'Apples,bananas,oranges and other fruits.'
+      word = 'apples'
+      print(text)
+      counter = {}
+      for word in text.split():
+        print(word, counter)
+        if word not in counter:
+          print("ohh")
+        counter[word] = 0
+        counter[word] += 1
+        print('***')
+       print(counter)
+      
+      
+  # Python “lists”.
+  List = ["Apples", "Bananas", "Oranges"]
+  Second = ['are', 'fruits']
+  print("List containing multiple values: ")
+  print(List)
+  print(List[1:3])
+  sentence = List+Second
+  print(sentence)
+  
+  
